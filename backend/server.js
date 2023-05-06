@@ -20,12 +20,12 @@ app.use(morgan("common"))
 app.use(cookie())
 //to enable cors
 // in localhost
-app.use(cors({credentials:true,origin:"http://localhost:3000"})) 
+//app.use(cors({credentials:true,origin:"http://localhost:3000"})) 
 
 // in production 
 
 
-//app.use(cors({credentials:true,origin:"http://35.154.223.195"})) 
+app.use(cors({credentials:true,origin:"http://65.2.141.17"})) 
 
 app.use('/api/auth',authrouter)
 app.use('/api/post',postrouter)
